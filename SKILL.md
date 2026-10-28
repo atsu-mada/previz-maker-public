@@ -84,6 +84,6 @@ description: Turn a one-sentence scene description or an existing shot list into
 
 ## スイートとの関係
 
-このスキルはスイートに依存しない。できた `previz.mp4` は、選んだスイートオペレーター（例: `magnific-operator`、`tapnow-chrome-operator`）が `@Video 1` として参照に上げる。受け渡しと各スイートの手順は ai-video-production の [suite-operators](https://github.com/atsu-mada/ai-video-production/blob/main/references/core/suite-operators.html) を参照。
+このスキルはスイートに依存しない。できた `previz.mp4` は、選んだスイートオペレーター（例: `magnific-operator`、`tapnow-operator`）が `@Video 1` として参照に上げる。受け渡しと各スイートの手順は ai-video-production の [suite-operators](https://github.com/atsu-mada/ai-video-production-public/blob/main/references/core/suite-operators.html) を参照。
 
 Seedance などへの投入や生成は、このスキルでは行わない。

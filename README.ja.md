@@ -26,14 +26,14 @@ node scripts/render.mjs <previz フォルダ> [--fps 24] [--size 1280x720]
 
 テンプレートは既存の SCENE をそのまま動かしたまま、次の任意項目を使えます: 描画距離 `SCENE.far`（大きな球は自動で滑らかに描画）、白フェード `white` / `white-hold`、照明なしの単色 `basic: true`、ビートごとの進み方 `curve`、全面の色板 `SCENE.veil`、回り込み用の関数カメラ `beat.cam(t)`、ビート間の空の色の補間 `skyBlend`（既定はハードカット）。回り込み、スケールリビール、色によるマッチ転換などの汎用技法は SKILL.md にあります。
 
-できた previz はスイートに依存しません。選んだスイートオペレーター（例: magnific-operator、tapnow-chrome-operator）が `@Video 1` として参照に上げます。利用者が previz を見て OK を出すまで、有料の生成には進みません。
+できた previz はスイートに依存しません。選んだスイートオペレーター（例: magnific-operator、tapnow-operator）が `@Video 1` として参照に上げます。利用者が previz を見て OK を出すまで、有料の生成には進みません。
 
 ## インストール
 
 ### Claude Code（プラグイン）
 
 ```
-/plugin marketplace add atsu-mada/previz-maker
+/plugin marketplace add atsu-mada/previz-maker-public
 /plugin install previz-maker@atsu-mada-previz-maker
 ```
 
@@ -42,7 +42,7 @@ node scripts/render.mjs <previz フォルダ> [--fps 24] [--size 1280x720]
 ### Claude Code（手動）
 
 ```bash
-git clone https://github.com/atsu-mada/previz-maker.git ~/.claude/skills/previz-maker
+git clone https://github.com/atsu-mada/previz-maker-public.git ~/.claude/skills/previz-maker
 ```
 
 `/previz-maker` で呼び出せます。
@@ -50,7 +50,7 @@ git clone https://github.com/atsu-mada/previz-maker.git ~/.claude/skills/previz-
 ### Codex
 
 ```bash
-git clone https://github.com/atsu-mada/previz-maker.git ~/.codex/skills/previz-maker
+git clone https://github.com/atsu-mada/previz-maker-public.git ~/.codex/skills/previz-maker
 ```
 
 `$previz-maker` で呼び出せます。
@@ -67,8 +67,8 @@ git clone https://github.com/atsu-mada/previz-maker.git ~/.codex/skills/previz-m
 
 ## 関連スキル
 
-- [ai-video-production](https://github.com/atsu-mada/ai-video-production) — 企画、参照シート、絵コンテ、カットプロンプトを作る前工程
-- [seedance-studio](https://github.com/atsu-mada/seedance-studio) — Seedance 2.5 のプロンプト作成（Emily2040/seedance-2.0 の改変フォーク）
+- [ai-video-production](https://github.com/atsu-mada/ai-video-production-public) — 企画、参照シート、絵コンテ、カットプロンプトを作る前工程
+- [seedance-studio](https://github.com/atsu-mada/seedance-studio-public) — Seedance 2.5 のプロンプト作成（Emily2040/seedance-2.0 の改変フォーク）
 
 ## 制限
 

@@ -26,14 +26,14 @@ node scripts/render.mjs <previz-dir> [--fps 24] [--size 1280x720]
 
 Existing SCENE blocks keep working unchanged, and the template adds these optional features: draw distance `SCENE.far` (large spheres are drawn smoothly automatically), white fades `white` / `white-hold`, unlit flat colour `basic: true`, per-beat easing `curve`, a full-screen colour plate `SCENE.veil`, a function camera `beat.cam(t)` for orbits, and sky-colour interpolation between beats `skyBlend` (hard cuts by default). General techniques such as orbits, scale reveals, and colour match transitions are described in SKILL.md.
 
-The previz does not depend on any suite. The suite operator you choose (for example magnific-operator or tapnow-chrome-operator) uploads it as the `@Video 1` reference. Paid generation does not start until the user has watched the previz and approved it.
+The previz does not depend on any suite. The suite operator you choose (for example magnific-operator or tapnow-operator) uploads it as the `@Video 1` reference. Paid generation does not start until the user has watched the previz and approved it.
 
 ## Install
 
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add atsu-mada/previz-maker
+/plugin marketplace add atsu-mada/previz-maker-public
 /plugin install previz-maker@atsu-mada-previz-maker
 ```
 
@@ -42,7 +42,7 @@ Invoke with `/previz-maker:previz-maker`.
 ### Claude Code (manual)
 
 ```bash
-git clone https://github.com/atsu-mada/previz-maker.git ~/.claude/skills/previz-maker
+git clone https://github.com/atsu-mada/previz-maker-public.git ~/.claude/skills/previz-maker
 ```
 
 Invoke with `/previz-maker`.
@@ -50,7 +50,7 @@ Invoke with `/previz-maker`.
 ### Codex
 
 ```bash
-git clone https://github.com/atsu-mada/previz-maker.git ~/.codex/skills/previz-maker
+git clone https://github.com/atsu-mada/previz-maker-public.git ~/.codex/skills/previz-maker
 ```
 
 Invoke with `$previz-maker`.
@@ -67,8 +67,8 @@ Invoke with `$previz-maker`.
 
 ## Related skills
 
-- [ai-video-production](https://github.com/atsu-mada/ai-video-production) — the earlier stage: planning, reference sheets, storyboards, and cut prompts
-- [seedance-studio](https://github.com/atsu-mada/seedance-studio) — Seedance 2.5 prompt authoring (a modified fork of Emily2040/seedance-2.0)
+- [ai-video-production](https://github.com/atsu-mada/ai-video-production-public) — the earlier stage: planning, reference sheets, storyboards, and cut prompts
+- [seedance-studio](https://github.com/atsu-mada/seedance-studio-public) — Seedance 2.5 prompt authoring (a modified fork of Emily2040/seedance-2.0)
 
 ## Limitations
 
