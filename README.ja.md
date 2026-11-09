@@ -10,6 +10,29 @@
 
 [ai& Build Day 応募デモ](https://youtu.be/JiEKbGYmS5E)（約3分、日本語のナレーションと字幕）：エージェントスキルで構築した AI 映像制作の3段階の工程と、その中での previz-maker の役割を紹介しています。
 
+## パイプラインの中の位置
+
+![AI 映像制作の3段階の工程：ステージ1 物語と参照、ステージ2 previz-maker によるプレビズと仮の動画、ステージ3 本番の生成](assets/demo/pipeline.svg)
+
+previz-maker は、エージェントスキルで構築した AI 映像制作の3段階の工程のうち、ステージ2で使うツールです。カメラと動きをプレビズで決め、有料生成の前に仮の動画で全編を確認します。ステージ3では、プレビズを参照動画として動画モデルに渡し、1ショット1ジョブで生成します。
+
+## 例：1行からプレビズへ
+
+入力（1行）：
+
+> 夕暮れの空き地で、赤い服の子が投げた紙飛行機を、青い服の子が受け取って振り返る。
+
+![紙飛行機の場面のブロックプレビズ（10秒）](assets/demo/paper-plane-previz.gif)
+
+この実行で出力されたファイル：[previz.html](examples/paper-plane/previz.html)、[seedance-prompt.txt](examples/paper-plane/seedance-prompt.txt)、[shots.md](examples/paper-plane/shots.md)。書き出した previz.mp4 は240フレーム（24fps で10.000秒）です。
+
+<details>
+<summary>コマ一覧（0.5秒ごと）</summary>
+
+![紙飛行機のプレビズのコマ一覧](assets/demo/paper-plane-contact.png)
+
+</details>
+
 ## できること
 
 毎回、次の3ファイルを作ります。

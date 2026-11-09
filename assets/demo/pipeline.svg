@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="Helvetica, Arial, 'Hiragino Sans', sans-serif">
+  <title>Three-stage AI video pipeline and where previz-maker fits</title>
+  <rect x="0" y="0" width="960" height="380" rx="16" fill="#f7f7f5"/>
+  <text x="32" y="44" font-size="20" font-weight="700" fill="#1a1a19">Three-stage AI video pipeline (agent skills for Claude Code and Codex)</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#5b5b57"/>
+    </marker>
+  </defs>
+
+  <!-- Stage 1 -->
+  <rect x="32" y="72" width="272" height="232" rx="12" fill="#ffffff" stroke="#c9c8c1" stroke-width="2"/>
+  <text x="52" y="104" font-size="14" font-weight="700" fill="#3987e5">STAGE 1</text>
+  <text x="52" y="130" font-size="18" font-weight="700" fill="#1a1a19">Story and references</text>
+  <text x="52" y="162" font-size="14" fill="#3a3a37">Script and shot table,</text>
+  <text x="52" y="182" font-size="14" fill="#3a3a37">worked back from the ending</text>
+  <text x="52" y="210" font-size="14" fill="#3a3a37">Character, prop and place</text>
+  <text x="52" y="230" font-size="14" fill="#3a3a37">sheets, 3D sets, a still per shot</text>
+  <text x="52" y="278" font-size="13" font-weight="700" fill="#5b5b57">Each one approved before moving on</text>
+
+  <!-- Stage 2 -->
+  <rect x="344" y="72" width="272" height="232" rx="12" fill="#ffffff" stroke="#3987e5" stroke-width="3"/>
+  <text x="364" y="104" font-size="14" font-weight="700" fill="#3987e5">STAGE 2</text>
+  <text x="364" y="130" font-size="18" font-weight="700" fill="#1a1a19">Previz and animatic</text>
+  <rect x="364" y="146" width="232" height="60" rx="8" fill="#e8f1fc"/>
+  <text x="378" y="170" font-size="15" font-weight="700" fill="#1f5fae">previz-maker (this repo)</text>
+  <text x="378" y="192" font-size="13" fill="#1f5fae">or Blender: camera and motion</text>
+  <text x="364" y="232" font-size="14" fill="#3a3a37">Full cut from stills and temp voice</text>
+  <text x="364" y="252" font-size="14" fill="#3a3a37">Unchanged takes are reused</text>
+  <text x="364" y="278" font-size="13" font-weight="700" fill="#5b5b57">Nothing paid runs before approval</text>
+
+  <!-- Stage 3 -->
+  <rect x="656" y="72" width="272" height="232" rx="12" fill="#ffffff" stroke="#c9c8c1" stroke-width="2"/>
+  <text x="676" y="104" font-size="14" font-weight="700" fill="#3987e5">STAGE 3</text>
+  <text x="676" y="130" font-size="18" font-weight="700" fill="#1a1a19">Final generation</text>
+  <text x="676" y="162" font-size="14" fill="#3a3a37">Full estimate and budget cap</text>
+  <text x="676" y="182" font-size="14" fill="#3a3a37">first; previz as reference video</text>
+  <text x="676" y="210" font-size="14" fill="#3a3a37">One shot per job via the API,</text>
+  <text x="676" y="230" font-size="14" fill="#3a3a37">costs recorded per job</text>
+  <text x="676" y="278" font-size="13" font-weight="700" fill="#5b5b57">No automatic retries</text>
+
+  <line x1="306" y1="188" x2="340" y2="188" stroke="#5b5b57" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="618" y1="188" x2="652" y2="188" stroke="#5b5b57" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="32" y="344" font-size="13" fill="#5b5b57">previz-maker turns one scene line into a block previz (previz.html), a prompt (seedance-prompt.txt) and a shot table (shots.md),</text>
+  <text x="32" y="364" font-size="13" fill="#5b5b57">then exports previz.mp4 at an exact frame count with headless Chrome. The previz goes to Stage 3 as the reference video.</text>
+</svg>
