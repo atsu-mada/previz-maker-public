@@ -10,6 +10,30 @@ Author: atsu_mada (ATSUFUMI KASHIMA) / GitHub [@atsu-mada](https://github.com/at
 
 [ai& Build Day submission demo](https://youtu.be/JiEKbGYmS5E) (about 3 minutes, Japanese narration and subtitles): the three-stage AI video pipeline built with agent skills, and where previz-maker fits.
 
+## Where it fits
+
+![Three-stage AI video pipeline: Stage 1 story and references, Stage 2 previz and animatic with previz-maker, Stage 3 final generation](assets/demo/pipeline.svg)
+
+previz-maker is the Stage 2 tool of a three-stage AI video pipeline built as agent skills. Camera and motion are settled in the previz, and the full cut is checked in an animatic before any paid generation. In Stage 3, the previz goes to the video model as the reference video, one shot per job.
+
+## Example: one line to a previz
+
+Input (one line, in Japanese):
+
+> 夕暮れの空き地で、赤い服の子が投げた紙飛行機を、青い服の子が受け取って振り返る。
+> (At dusk on an empty lot, the child in red throws a paper plane; the child in blue catches it and turns around.)
+
+![Block previz of the paper plane scene, 10 seconds](assets/demo/paper-plane-previz.gif)
+
+Outputs from this run: [previz.html](examples/paper-plane/previz.html), [seedance-prompt.txt](examples/paper-plane/seedance-prompt.txt), and [shots.md](examples/paper-plane/shots.md). The exported previz.mp4 has 240 frames (10.000 seconds at 24 fps).
+
+<details>
+<summary>Contact sheet (every 0.5 seconds)</summary>
+
+![Contact sheet of the paper plane previz](assets/demo/paper-plane-contact.png)
+
+</details>
+
 ## What it does
 
 Every run produces these three files.
