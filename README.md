@@ -6,6 +6,10 @@ An agent skill that turns a one-line scene description or a shot list into a **b
 
 Author: atsu_mada (ATSUFUMI KASHIMA) / GitHub [@atsu-mada](https://github.com/atsu-mada)
 
+## Demo video
+
+[ai& Build Day submission demo](https://youtu.be/JiEKbGYmS5E) (about 3 minutes, Japanese narration and subtitles): the three-stage AI video pipeline built with agent skills, and where previz-maker fits.
+
 ## What it does
 
 Every run produces these three files.

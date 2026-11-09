@@ -6,6 +6,10 @@
 
 作者: あつまだ（ATSUFUMI KASHIMA） / GitHub [@atsu-mada](https://github.com/atsu-mada)
 
+## デモ動画
+
+[ai& Build Day 応募デモ](https://youtu.be/JiEKbGYmS5E)（約3分、日本語のナレーションと字幕）：エージェントスキルで構築した AI 映像制作の3段階の工程と、その中での previz-maker の役割を紹介しています。
+
 ## できること
 
 毎回、次の3ファイルを作ります。
